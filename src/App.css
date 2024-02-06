@@ -1,0 +1,283 @@
+:root {
+    --font-family: 'Manrope', sans-serif;
+    --color-black: #222428;
+    --color-black-hover: #333538;
+    /*    #016A70*/
+    --color-success: #54B435;
+    --color-primary: #1768ff;
+    --color-primary-hover: #2773ff;
+    --color-danger: #DC2626;
+    --color-warning: #FFC436;
+    --color-grey: #444444;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 800px;
+    padding: 24px;
+}
+
+.container__tabla {
+    width: 100%;
+}
+
+
+/* Estilos para los botones*/
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+
+.btn-sm {
+    padding: 8px 16px;
+    font-size: 12px;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: var(--color-primary);
+}
+
+
+.btn-secondary {
+    background-color: var(--color-black);
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-black-hover);
+}
+
+.btn-outline-secondary {
+    background-color: transparent;
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: var(--color-black);
+}
+
+.btn-success {
+    background-color: var(--color-success);
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #4EA531;
+}
+
+.btn-outline-success {
+    background-color: transparent;
+    color: var(--color-success);
+    border: 1px solid var(--color-success);
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: var(--color-success);
+}
+
+.btn-danger {
+    background-color: var(--color-danger);
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #e43636;
+}
+
+.btn-outline-danger {
+    background-color: transparent;
+    color: var(--color-danger);
+    border: 1px solid var(--color-danger);
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.btn-outline-danger:hover {
+    color: #fff;
+    background-color: var(--color-danger);
+}
+
+.btn-warning {
+    background-color: var(--color-warning);
+    color: var(--color-black);
+}
+
+.btn-warning:hover {
+    background-color: #fac958;
+}
+
+.btn-outline-warning {
+    background-color: transparent;
+    color: var(--color-warning);
+    border: 1px solid var(--color-warning);
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.btn-outline-warning:hover {
+    color: var(--color-black);
+    background-color: var(--color-warning);
+}
+
+.btn-light {
+    background-color: #eeeeee;
+    color: var(--color-grey);
+}
+
+
+/* Estilos para tablas */
+
+.table {
+    width: 100%;
+    font-size: 13px;
+    margin-top: 20px;
+    padding: 8px 0px;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 8px;
+    border-collapse: collapse;
+    font-family: 'Manrope', sans-serif;
+}
+
+.table tr th,
+.table tr td {
+    text-align: left;
+    padding: 8px 24px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.table tr {
+    background-color: #FFF;
+}
+
+.table tr td {
+    color: #5e5e5e;
+    font-weight: 700;
+}
+
+.table tr:hover {
+    background-color: #F4F4F5;
+}
+
+.table.table-dark tr {
+    background-color: #222428;
+    color: #FFF;
+}
+
+.table.table-dark tr td {
+    color: #FFF;
+    font-weight: 600;
+}
+
+.table.table-dark tr:hover {
+    background-color: #2b2d31;
+}
+
+.table-sm tr th,
+.table-sm tr td {
+    padding: 4px 16px;
+}
+
+table tbody tr td div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.badge-cancelo,
+.badge-falta-pagar {
+    padding: 4px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.badge-falta-pagar {
+    background-color: #ffc0bc;
+    color: #DC2626;
+}
+
+.badge-cancelo {
+    background-color: #c9f8ba;
+    color: #3faa1b;
+}
+
+.table.table-dark .btn-danger {
+    background-color: transparent;
+    outline: 1px solid var(--color-grey);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.table.table-dark .btn-danger:hover {
+    background-color: #e43636;
+}
+
+.table.table-dark .btn-warning {
+    background-color: transparent;
+    outline: 1px solid var(--color-grey);
+    color: #FFF;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.table.table-dark .btn-warning:hover {
+    background-color: #fac958;
+}
+
+.table.table-dark .badge-falta-pagar {
+    background-color: #e43636;
+    color: #FFF;
+}
+
+.table.table-dark .badge-cancelo {
+    background-color: #3faa1b;
+    color: #FFF;
+}
+
+.table.table-dark tbody tr td {
+    font-weight: 500;
+}
+
+.btn-libre {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 40px;
+}
